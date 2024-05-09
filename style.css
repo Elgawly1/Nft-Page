@@ -163,7 +163,7 @@ header article i {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    height: 90vh;
+    min-height: 60vh;
     width: 50%;
     border-radius: 40px;
 }
@@ -370,18 +370,13 @@ header .bar:hover {
 }
 @media (max-height : 715px) {
     .sec-1 .left .head {
-        padding-top: 2.5em;
+        font-size: 1.4em;
     }
-    .num {
-        margin-top: 0;
-    }
-} 
-/* Firefox (uncomment to work in Firefox, although other properties will not work!)  */
-/** {
-  scrollbar-width: thin;
-  scrollbar-color: #1224CA #DFE9EB;
-}*/
+    .right{
+        min-height: 80vh;
 
+    }
+}
 /* Chrome, Edge and Safari */
 *::-webkit-scrollbar {
     height: 5px;
