@@ -8,10 +8,11 @@
 }
 body{
     background: linear-gradient(to right, #060d1d, #1a243d);
-    min-height: 90vh;
-    width: 100%;
+    max-height: 100vh;
+    width: 100%;  
     background-color: #060d1d;
     font-family: "Poppins", sans-serif;
+    /* overflow: hidden */
 }
 header {
     display: flex;
@@ -35,7 +36,6 @@ header nav a{
     color: white;
     transition: all .3s ease-in-out;
     position: relative;
-
 }
 header nav a::after{
     content: "";
@@ -111,7 +111,7 @@ header article i {
     align-items: center;
     height: 5em;
     max-width: 26em;
-
+                                                        
 }
 .sec-1 .left .vid {
     /* background-color: #2e467e; */
@@ -163,7 +163,7 @@ header article i {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    min-height: 60vh;
+    height: 90vh;
     width: 50%;
     border-radius: 40px;
 }
@@ -172,11 +172,12 @@ header article i {
     height: 37em;
     border-bottom: 2px solid #794ff5;
     border-radius: 50px;
+    z-index: 1;
 }
 .right .card {
     border: 2px solid;
     width: 26em;
-    height: 20%;
+    height: 10em;
     border-radius: 10px;
     padding: 25px;
     display: flex;
@@ -184,8 +185,11 @@ header article i {
     flex-direction: column;
     background-color: #060d1d;
     box-shadow: 0 0 5px 1px;
+    z-index: 1;
 }
-
+/* .left {
+    max-height: 90vh;
+} */
 .right .card .s2,
 .right .card .s1 {
     display: flex;
@@ -228,13 +232,13 @@ header article i {
 .cr {
     position: absolute;
     /* background-color: forestgreen; */
-    height: 44em;
-    width: 54em;
+    max-height: 60%;
+    width: auto;
     color: #060d1d;
     /* background: linear-gradient(to right, rgb(185, 40, 148), rgb(80, 47, 204)); */
     /* border-radius:48% 52% 51% 49% / 43% 29% 71% 57%  ; */
     z-index: -1;
-    /* right: 3em; */
+    /* right: 1em; */
     top: 15%;
 }
 .cc {
@@ -268,15 +272,15 @@ header .bar:hover {
         position: absolute;
         background-color: #5c34f0;
     }
+
 }
 @media (max-width : 900px) {
     .sec-1 .left .head{
         font-size: 3em;
     }
-    .right .cr {
-        width: 26em;
-        /* top: 144%; */
-    }
+    /* .right .cr {
+        max-height: 60%;
+    } */
     .right img {
         height: 26em;
     }
@@ -324,7 +328,7 @@ header .bar:hover {
     }
     .right .cr {
         width: 100%;
-        top: -8%;
+        /* top: -8%; */
     }
     .sec-1 {
         text-align: center;
@@ -340,8 +344,8 @@ header .bar:hover {
     }
     .right {
         flex-direction: column;
-        justify-content: baseline;
-        max-height: 57vh;
+        justify-content: space-evenly;
+        /* max-height: 57vh; */
     }
 }
 @media (max-width : 400px) {
